@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechLaunch provides practical technology learning and web development services.">
+    <title>TechLaunch | Technology Learning & Development</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header id="top">
+        <nav>
+            <a href="#home">TechLaunch</a>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h1>Learn Technology. Build Your Future.</h1>
+
+            <p>
+                TechLaunch helps students and learners develop
+                practical technology and web development skills.
+            </p>
+
+            <a href="#services">Explore Our Services</a>
+        </section>
+
+        <section id="about">
+            <h2>About TechLaunch</h2>
+
+            <figure>
+                <img src="images/about.jpg"
+                     alt="Students learning technology skills together">
+            </figure>
+
+            <p>
+                TechLaunch provides a friendly and practical learning environment where
+                students can develop their knowledge, technical skills, creativity,
+                confidence, and problem-solving abilities through modern technology and
+                real-world projects. We encourage learners to explore web development,
+                programming, digital tools, and creative solutions while gaining practical
+                experience that supports their academic and future career goals.
+            </p>
+        </section>
+
+        <section id="categories">
+            <h2>Our Categories</h2>
+
+            <div class="category-grid">
+
+                <article>
+                    <h3>Web Development</h3>
+                    <p>
+                        Learn how to design and build responsive websites.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Programming</h3>
+                    <p>
+                        Develop practical programming and problem-solving skills.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>UI & UX Design</h3>
+                    <p>
+                        Create useful and user-friendly digital experiences.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Digital Skills</h3>
+                    <p>
+                        Build essential skills for modern technology environments.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+
+            <div class="service-grid">
+
+                <article>
+                    <h3>Web Development</h3>
+                    <p>
+                        Build responsive and modern websites using HTML,
+                        CSS, and JavaScript.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Programming Training</h3>
+                    <p>
+                        Develop programming knowledge through practical
+                        exercises and projects.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>UI/UX Design</h3>
+                    <p>
+                        Learn how to create clean, accessible, and
+                        user-friendly interfaces.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Project Guidance</h3>
+                    <p>
+                        Get practical guidance for technology and
+                        software development projects.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Digital Skills</h3>
+                    <p>
+                        Improve essential digital skills for academic
+                        and professional development.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <div class="contact-details">
+                <p>
+                    Email:
+                    <a href="mailto:hello@techlaunch.example">
+                        hello@techlaunch.example
+                    </a>
+                </p>
+
+                <p>
+                    Phone:
+                    <a href="tel:+94123456789">
+                        +94 12 345 6789
+                    </a>
+                </p>
+
+                <p>
+                    Location: Jaffna, Sri Lanka
+                </p>
+            </div>
+
+            <form id="contact-form">
+
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           required>
+                </div>
+
+                <div>
+                    <label for="subject">Subject</label>
+                    <select id="subject"
+                            name="subject"
+                            required>
+
+                        <option value="">Select a subject</option>
+                        <option value="web-development">
+                            Web Development
+                        </option>
+                        <option value="programming">
+                            Programming
+                        </option>
+                        <option value="ui-ux">
+                            UI/UX Design
+                        </option>
+                        <option value="project-guidance">
+                            Project Guidance
+                        </option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message"
+                              name="message"
+                              rows="6"
+                              required></textarea>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox"
+                               id="consent"
+                               name="consent"
+                               required>
+
+                        I agree to be contacted about my enquiry.
+                    </label>
+                </div>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+        </section>
+
+        <section id="newsletter">
+            <h2>Join Our Newsletter</h2>
+
+            <p>
+                Subscribe to receive updates about our latest
+                learning opportunities and technology content.
+            </p>
+
+            <form id="newsletter-form">
+
+                <label for="newsletter-email">
+                    Email Address
+                </label>
+
+                <input type="email"
+                       id="newsletter-email"
+                       name="newsletter-email"
+                       required>
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+
+        <p>
+            &copy; 2026 TechLaunch. All rights reserved.
+        </p>
+
+        <p>
+            Technology learning and practical development.
+        </p>
+
+        <a href="#top">Back to top</a>
+
+    </footer>
+
+</body>
+</html>
