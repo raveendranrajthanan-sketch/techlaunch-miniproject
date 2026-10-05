@@ -45,7 +45,6 @@ body {
 
 #top nav ul {
     list-style: none;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.4rem;
@@ -860,4 +859,88 @@ main section h2 {
     #footer a {
         transition: none;
     }
+}
+
+#menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    min-height: 44px;
+    padding: 0.65rem 1rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 0.5rem;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#menu-toggle:hover,
+#menu-toggle:focus-visible {
+    background-color: #129447;
+}
+
+#menu-toggle:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 2px;
+}
+
+#main-menu {
+    display: none;
+}
+
+#main-menu.is-open {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    #main-menu {
+        display: flex !important;
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+/* ================================
+   Form Validation Messages
+================================ */
+
+.field-error {
+    display: block;
+
+    min-height: 1.25rem;
+
+    color: #b42318;
+
+    font-size: 0.875rem;
+
+    line-height: 1.4;
+}
+
+
+#contact-form input[aria-invalid="true"],
+#contact-form select[aria-invalid="true"],
+#contact-form textarea[aria-invalid="true"] {
+    border-color: #b42318;
+
+    box-shadow:
+        0 0 0 3px rgba(180, 35, 24, 0.12);
+}
+
+
+#contact-form input[aria-invalid="true"]:focus,
+#contact-form select[aria-invalid="true"]:focus,
+#contact-form textarea[aria-invalid="true"]:focus {
+    border-color: #b42318;
 }
