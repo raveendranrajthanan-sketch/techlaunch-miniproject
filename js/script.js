@@ -257,3 +257,34 @@ if (contactForm) {
     });
 
 }
+
+/* ================================
+   Newsletter Form
+================================ */
+
+const newsletterForm = document.querySelector("#newsletter-form");
+const newsletterEmail = newsletterForm
+    ? newsletterForm.querySelector('input[type="email"]')
+    : null;
+
+if (newsletterForm && newsletterEmail) {
+    newsletterForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const email = newsletterEmail.value.trim();
+        const emailPattern =
+            /^[^\s@]+@[^\s@.]+(?:\.[^\s@.]{2,})+$/;
+
+        if (!emailPattern.test(email)) {
+            newsletterEmail.setAttribute("aria-invalid", "true");
+            alert("Please enter a valid email address.");
+            newsletterEmail.focus();
+            return;
+        }
+
+        newsletterEmail.removeAttribute("aria-invalid");
+
+        alert("Thank you for subscribing to our newsletter!");
+        newsletterForm.reset();
+    });
+}
