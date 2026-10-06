@@ -21,7 +21,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #075e24;
+    background-color: #ea580c;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 }
 
@@ -66,7 +66,7 @@ body {
 
 #top nav ul li a:hover,
 #top nav ul li a:focus-visible {
-    background-color: #129447;
+    background-color: #f59e0b;
     color: #ffffff;
 }
 
@@ -135,7 +135,7 @@ main section h2 {
     background:
         linear-gradient(
             135deg,
-            #ecfdf3 0%,
+            #fff7ed 0%,
             #f8fafc 55%,
             #ffffff 100%
         );
@@ -146,7 +146,7 @@ main section h2 {
 #home h1 {
     max-width: 850px;
     margin-bottom: 1.25rem;
-    color: #075e24;
+    color: #ea580c;
     font-size: clamp(
         2.2rem,
         8vw,
@@ -172,9 +172,9 @@ main section h2 {
     justify-content: center;
     min-height: 44px;
     padding: 0.85rem 1.5rem;
-    background-color: #075e24;
+    background-color: #ea580c;
     color: #ffffff;
-    border: 2px solid #075e24;
+    border: 2px solid #ea580c;
     border-radius: 999px;
     text-decoration: none;
     font-size: 1rem;
@@ -184,14 +184,14 @@ main section h2 {
 }
 
 #home > a:hover {
-    background-color: #129447;
-    border-color: #129447;
+    background-color: #f59e0b;
+    border-color: #f59e0b;
     transform: translateY(-2px);
     box-shadow:0 12px 25px rgba(7, 94, 36, 0.25);
 }
 
 #home > a:focus-visible {
-    outline: 3px solid #075e24;
+    outline: 3px solid #ea580c;
     outline-offset: 4px;
 }
 
@@ -263,7 +263,7 @@ main section h2 {
     width: 60px;
     height: 4px;
     margin-top: 0.75rem;
-    background-color: #075e24;
+    background-color: #ea580c;
     border-radius: 999px;
 }
 
@@ -377,12 +377,12 @@ main section h2 {
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: #075e24;
+    background-color: #ea580c;
 }
 
 #categories .category-grid article h3 {
     margin-bottom: 0.75rem;
-    color: #075e24;
+    color: #ea580c;
     font-size: 1.25rem;
     line-height: 1.3;
 }
@@ -395,7 +395,7 @@ main section h2 {
 
 #categories .category-grid article:hover {
     transform: translateY(-5px);
-    border-color: #129447;
+    border-color: #f59e0b;
     box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
 }
 
@@ -477,12 +477,12 @@ main section h2 {
     top: 0;
     width: 4px;
     height: 100%;
-    background-color: #075e24;
+    background-color: #ea580c;
 }
 
 #services .service-grid article h3 {
     margin-bottom: 0.75rem;
-    color: #075e24;
+    color: #ea580c;
     font-size: 1.25rem;
     line-height: 1.3;
 }
@@ -496,7 +496,7 @@ main section h2 {
 
 #services .service-grid article:hover {
     transform: translateY(-5px);
-    border-color: #129447;
+    border-color: #f59e0b;
     box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
 }
 
@@ -544,7 +544,7 @@ main section h2 {
 
 #contact {
     padding: 4rem 1.25rem;
-    background-color: #ecfdf3;
+    background-color: #fff7ed;
     border-radius: 1rem;
 }
 
@@ -571,7 +571,7 @@ main section h2 {
 }
 
 #contact .contact-details a {
-    color: #075e24;
+    color: #ea580c;
     font-weight: 700;
     text-decoration: none;
 }
@@ -625,7 +625,7 @@ main section h2 {
 #contact-form input:focus,
 #contact-form select:focus,
 #contact-form textarea:focus {
-    border-color: #075e24;
+    border-color: #ea580c;
     outline: none;
     box-shadow:
         0 0 0 3px rgba(7, 94, 36, 0.15);
@@ -642,15 +642,15 @@ main section h2 {
     min-height: 20px;
     flex: 0 0 auto;
     margin-top: 0.2rem;
-    accent-color: #075e24;
+    accent-color: #ea580c;
 }
 
 #contact-form button {
     min-height: 48px;
     padding: 0.8rem 1.5rem;
     color: #ffffff;
-    background-color: #075e24;
-    border: 2px solid #075e24;
+    background-color: #ea580c;
+    border: 2px solid #ea580c;
     border-radius: 999px;
     font: inherit;
     font-weight: 700;
@@ -659,15 +659,15 @@ main section h2 {
 }
 
 #contact-form button:hover {
-    background-color: #129447;
-    border-color: #129447;
+    background-color: #f59e0b;
+    border-color: #f59e0b;
     transform: translateY(-2px);
     box-shadow:
         0 8px 20px rgba(7, 94, 36, 0.2);
 }
 
 #contact-form button:focus-visible {
-    outline: 3px solid #075e24;
+    outline: 3px solid #ea580c;
     outline-offset: 3px;
 }
 
@@ -761,7 +761,7 @@ main section h2 {
 }
 
 #newsletter-form input:focus {
-    border-color: #075e24;
+    border-color: #ea580c;
     outline: none;
     box-shadow:0 0 0 3px rgba(7, 94, 36, 0.15);
 }
@@ -770,8 +770,8 @@ main section h2 {
     min-height: 48px;
     padding: 0.8rem 1.5rem;
     color: #ffffff;
-    background-color: #075e24;
-    border: 2px solid #075e24;
+    background-color: #ea580c;
+    border: 2px solid #ea580c;
     border-radius: 999px;
     font: inherit;
     font-weight: 700;
@@ -780,14 +780,14 @@ main section h2 {
 }
 
 #newsletter-form button:hover {
-    background-color: #129447;
-    border-color: #129447;
+    background-color: #f59e0b;
+    border-color: #f59e0b;
     transform: translateY(-2px);
 }
 
 
 #newsletter-form button:focus-visible {
-    outline: 3px solid #075e24;
+    outline: 3px solid #ea580c;
     outline-offset: 3px;
 }
 
@@ -812,7 +812,7 @@ main section h2 {
 #footer {
     padding: 2.5rem 1.25rem;
     color: #e5e7eb;
-    background-color: #06451c;
+    background-color: #9a3412;
     text-align: center;
 }
 
@@ -839,7 +839,7 @@ main section h2 {
 
 #footer a:hover,
 #footer a:focus-visible {
-    color: #06451c;
+    color: #9a3412;
     background-color: #ffffff;
 }
 
@@ -879,7 +879,7 @@ main section h2 {
 
 #menu-toggle:hover,
 #menu-toggle:focus-visible {
-    background-color: #129447;
+    background-color: #f59e0b;
 }
 
 #menu-toggle:focus-visible {
