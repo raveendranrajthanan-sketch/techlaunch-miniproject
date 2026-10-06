@@ -907,40 +907,35 @@ main section h2 {
     }
 }
 
-
-
-
-
-
-/* ================================
-   Form Validation Messages
-================================ */
-
 .field-error {
     display: block;
-
     min-height: 1.25rem;
-
     color: #b42318;
-
     font-size: 0.875rem;
-
     line-height: 1.4;
 }
-
 
 #contact-form input[aria-invalid="true"],
 #contact-form select[aria-invalid="true"],
 #contact-form textarea[aria-invalid="true"] {
     border-color: #b42318;
-
-    box-shadow:
-        0 0 0 3px rgba(180, 35, 24, 0.12);
+    box-shadow: 0 0 0 3px rgba(180, 35, 24, 0.12);
 }
-
 
 #contact-form input[aria-invalid="true"]:focus,
 #contact-form select[aria-invalid="true"]:focus,
 #contact-form textarea[aria-invalid="true"]:focus {
     border-color: #b42318;
+}
+
+#categories > img,
+#services > img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: 180px;
+    margin: 0 auto 2rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
 }
