@@ -1,6 +1,6 @@
 # TechLaunch Mini Project
 
-**Live Demo:** `https://YOUR-USERNAME.github.io/techlaunch-miniproject/`
+**Live Demo:** `https://raveendranrajthanan-sketch.github.io/techlaunch-miniproject/`
 
 ## Purpose
 
