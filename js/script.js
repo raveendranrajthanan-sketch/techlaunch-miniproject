@@ -31,9 +31,6 @@ if (menuToggle && mainMenu) {
     });
 }
 
-/* ================================
-   Contact Form Validation
-================================ */
 
 const contactForm = document.querySelector("#contact-form");
 
@@ -68,9 +65,6 @@ const validationRules = {
     }
 };
 
-
-/* Create error message */
-
 function getErrorElement(field) {
 
     let error = field.parentElement.querySelector(".field-error");
@@ -89,9 +83,6 @@ function getErrorElement(field) {
     return error;
 }
 
-
-/* Generic validation function */
-
 function validateField(field) {
 
     const fieldName = field.name;
@@ -104,56 +95,33 @@ function validateField(field) {
 
     let value = field.value.trim();
 
-    /* Remove spaces and hyphens from phone */
-
     if (fieldName === "phone") {
         value = value.replace(/[\s-]/g, "");
     }
 
-
     let isValid = true;
 
-
-    /* Checkbox */
-
     if (fieldName === "consent") {
-
         isValid = field.checked;
-
     }
-
-    /* Subject */
-
     else if (fieldName === "subject") {
-
         isValid =
-            value !== "" &&
-            rule.pattern.test(value);
-
+        value !== "" &&
+        rule.pattern.test(value);
     }
-
-    /* Other fields */
-
     else {
-
         isValid =
-            value !== "" &&
-            rule.pattern.test(value);
+        value !== "" &&
+        rule.pattern.test(value);
     }
-
 
     const errorElement = getErrorElement(field);
 
-
     if (!isValid) {
-
         field.setAttribute("aria-invalid", "true");
-
         errorElement.textContent = rule.message;
-
         return false;
     }
-
 
     field.removeAttribute("aria-invalid");
 
@@ -161,9 +129,6 @@ function validateField(field) {
 
     return true;
 }
-
-
-/* Track touched fields */
 
 const contactFields = contactForm
     ? contactForm.querySelectorAll(
@@ -176,15 +141,12 @@ contactFields.forEach((field) => {
 
     field.dataset.touched = "false";
 
-
     field.addEventListener("blur", () => {
 
         field.dataset.touched = "true";
-
         validateField(field);
 
     });
-
 
     field.addEventListener("input", () => {
 
@@ -193,7 +155,6 @@ contactFields.forEach((field) => {
         }
 
     });
-
 
     field.addEventListener("change", () => {
 
@@ -205,28 +166,19 @@ contactFields.forEach((field) => {
 
 });
 
-
-/* Form submit */
-
 if (contactForm) {
-
     contactForm.addEventListener("submit", (event) => {
-
         event.preventDefault();
-
 
         let formIsValid = true;
 
-
         contactFields.forEach((field) => {
-
             field.dataset.touched = "true";
 
             if (!validateField(field)) {
                 formIsValid = false;
             }
-
-        });
+    });
 
 
         if (formIsValid) {
@@ -258,10 +210,6 @@ if (contactForm) {
 
 }
 
-/* ================================
-   Newsletter Form
-================================ */
-
 const newsletterForm = document.querySelector("#newsletter-form");
 const newsletterEmail = newsletterForm
     ? newsletterForm.querySelector('input[type="email"]')
@@ -288,3 +236,64 @@ if (newsletterForm && newsletterEmail) {
         newsletterForm.reset();
     });
 }
+
+const learnMoreButtons = document.querySelectorAll(".learn-more");
+
+learnMoreButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const currentNotes = button.previousElementSibling;
+        const isCurrentlyHidden = currentNotes.hasAttribute("hidden");
+
+        learnMoreButtons.forEach((otherButton) => {
+            const otherNotes = otherButton.previousElementSibling;
+
+            if (otherButton !== button) {
+                otherNotes.setAttribute("hidden", "");
+                otherButton.setAttribute("aria-expanded", "false");
+                otherButton.textContent = "Learn More";
+            }
+        });
+
+        if (isCurrentlyHidden) {
+            currentNotes.removeAttribute("hidden");
+            button.setAttribute("aria-expanded", "true");
+            button.textContent = "Show Less";
+        } else {
+            currentNotes.setAttribute("hidden", "");
+            button.setAttribute("aria-expanded", "false");
+            button.textContent = "Learn More";
+        }
+    });
+});
+
+const serviceLearnMoreButtons =
+    document.querySelectorAll(".service-learn-more");
+
+serviceLearnMoreButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const currentNotes = button.previousElementSibling;
+        const isCurrentlyHidden =
+            currentNotes.hasAttribute("hidden");
+
+        serviceLearnMoreButtons.forEach((otherButton) => {
+            const otherNotes =
+                otherButton.previousElementSibling;
+
+            if (otherButton !== button) {
+                otherNotes.setAttribute("hidden", "");
+                otherButton.setAttribute("aria-expanded", "false");
+                otherButton.textContent = "Learn More";
+            }
+        });
+
+        if (isCurrentlyHidden) {
+            currentNotes.removeAttribute("hidden");
+            button.setAttribute("aria-expanded", "true");
+            button.textContent = "Show Less";
+        } else {
+            currentNotes.setAttribute("hidden", "");
+            button.setAttribute("aria-expanded", "false");
+            button.textContent = "Learn More";
+        }
+    });
+});
