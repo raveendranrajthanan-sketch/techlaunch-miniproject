@@ -22,17 +22,17 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
     min-width: 320px;
+    margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.7;
     color: var(--dark);
-    margin: 0;
-    background:linear-gradient(180deg,#01072b 0%, #a1b4d8 35%, #27176e 70%, #25024d 100%);
-    color: var(--dark);
-
+    background-color: #fffaf5;
 }
+
 
 img {
     max-width: 100%;
@@ -185,20 +185,22 @@ main section h2 {
 }
 
 #home {
-    min-height: calc(100vh - 100px);
+    min-height:0; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     position: relative;
     overflow: hidden;
-    margin: 2rem ;
-    padding: 5rem 1.25rem;
-    background:
-        radial-gradient(circle at 90% 15%, rgba(245, 158, 11, 0.22), transparent 30%),
-        radial-gradient(circle at 10% 85%, rgba(234, 88, 12, 0.10), transparent 28%),
-        linear-gradient(135deg, #f7ce77 0%, #ffffff 55%, #f7ce77 100%);
-    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    margin:0;
+    padding: 3rem 1.25rem;
+    background: radial-gradient(
+            circle at 85% 20%,
+            rgba(245, 158, 11, 0.14),
+            transparent 32%
+        ),
+        #fffaf5; 
+    border-radius: 0;
 }
 
 #home::before {
@@ -288,8 +290,8 @@ main section h2 {
 
 @media (min-width: 1024px) {
     #home {
-        min-height: calc(100vh - 80px);
-        padding: 7rem 4rem;
+        min-height: 0;
+        padding: 4rem 2rem;
     }
 
     #home h1 {
@@ -317,13 +319,11 @@ main section h2 {
     align-items: flex-start;
     position: relative;
     overflow: hidden;
-    margin: 2rem ;
-    padding: 5rem 1.25rem;
-    background:
-        radial-gradient(circle at 90% 15%, rgba(245, 158, 11, 0.22), transparent 30%),
-        radial-gradient(circle at 10% 85%, rgba(234, 88, 12, 0.10), transparent 28%),
-        linear-gradient(135deg, #f7ce77 0%, #ffffff 55%, #f7ce77 100%);
-    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    margin: 0 ;
+    padding: 2.5rem 1.25rem;
+    background:#ffffff;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 #about h2 {
@@ -436,20 +436,18 @@ main section h2 {
 }
 
 #categories {
-    min-height: calc(100vh - 100px);
+    min-height: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     position: relative;
     overflow: hidden;
-    margin: 2rem ;
-    padding: 5rem 1.25rem;
-    background:
-        radial-gradient(circle at 90% 15%, rgba(245, 158, 11, 0.22), transparent 30%),
-        radial-gradient(circle at 10% 85%, rgba(234, 88, 12, 0.10), transparent 28%),
-        linear-gradient(135deg, #f7ce77 0%, #ffffff 55%, #f7ce77 100%);
-    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    margin: 0 ;
+    padding: 3rem 1.25rem;
+    background:#fffaf5;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 #categories > img {
@@ -586,7 +584,7 @@ main section h2 {
 
     #categories .category-grid {
         grid-template-columns:repeat(3, minmax(0, 1fr));
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     #categories .category-grid article {
@@ -609,13 +607,11 @@ main section h2 {
     align-items: flex-start;
     position: relative;
     overflow: hidden;
-    margin: 2rem ;
-    padding: 5rem 1.25rem;
-    background:
-        radial-gradient(circle at 90% 15%, rgba(245, 158, 11, 0.22), transparent 30%),
-        radial-gradient(circle at 10% 85%, rgba(234, 88, 12, 0.10), transparent 28%),
-        linear-gradient(135deg, #f7ce77 0%, #ffffff 55%, #f7ce77 100%);
-    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    margin: 0 ;
+    padding: 3rem 1.25rem;
+    background:#ffffff;
+    border-radius:0;
+    box-shadow: none;
 }
 
 #services > img {
@@ -765,20 +761,18 @@ main section h2 {
     }
 }
 #contact {
-    min-height: calc(100vh - 100px);
+    min-height:0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     position: relative;
     overflow: hidden;
-    margin: 2rem ;
-    padding: 5rem 1.25rem;
-    background:
-        radial-gradient(circle at 90% 15%, rgba(245, 158, 11, 0.22), transparent 30%),
-        radial-gradient(circle at 10% 85%, rgba(234, 88, 12, 0.10), transparent 28%),
-        linear-gradient(135deg, #f7ce77 0%, #ffffff 55%, #f7ce77 100%);
-    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    margin: 0 ;
+    padding: 3rem 1.25rem;
+    background:#fffaf5;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 #contact .contact-details {
@@ -934,20 +928,18 @@ main section h2 {
 }
 
 #newsletter {
-    min-height: calc(100vh - 100px);
+    min-height:0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     position: relative;
     overflow: hidden;
-    margin: 2rem 1.25rem;
-    padding: 5rem 1.25rem ;
-    background:
-        radial-gradient(circle at 90% 15%, rgba(245, 158, 11, 0.22), transparent 30%),
-        radial-gradient(circle at 10% 85%, rgba(234, 88, 12, 0.10), transparent 28%),
-        linear-gradient(135deg, #f7ce77 0%, #ffffff 55%, #f7ce77 100%);
-    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    margin: 0;
+    padding: 3rem 1.25rem ;
+    background:#ffffff;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 #newsletter h2 {
@@ -1324,5 +1316,312 @@ main section h2 {
 
     *, *::before,*::after {
         transition: none !important;
+    }
+}
+
+/*overridinding all section*/
+
+/* TechLaunch - Consistent Section Headings */
+#home h1,
+#about h2,
+#categories h2,
+#services h2,
+#contact h2,
+#newsletter h2 {
+    color: #1f2937;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 750;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 1.25rem;
+    text-wrap: balance;
+}
+
+/* Consistent heading size */
+#home h1 {
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+}
+
+#about h2,
+#categories h2,
+#services h2,
+#contact h2,
+#newsletter h2 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+
+/* TechLaunch - Consistent Button Design */
+#home button,
+#about button,
+#categories button,
+#services button,
+#contact button,
+#newsletter button {
+    font: inherit;
+    font-weight: 600;
+    border: 2px solid #ea580c;
+    border-radius: 999px;
+    padding: 0.75rem 1.5rem;
+    background-color: #ea580c;
+    color: #ffffff;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+#home button:hover,
+#about button:hover,
+#categories button:hover,
+#services button:hover,
+#contact button:hover,
+#newsletter button:hover {
+    background-color: #c2410c;
+    border-color: #c2410c;
+    box-shadow: 0 4px 12px rgba(194, 65, 12, 0.2);
+}
+
+/* Keyboard accessibility */
+#home button:focus-visible,
+#about button:focus-visible,
+#categories button:focus-visible,
+#services button:focus-visible,
+#contact button:focus-visible,
+#newsletter button:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    #home button,
+    #about button,
+    #categories button,
+    #services button,
+    #contact button,
+    #newsletter button {
+        transition: none;
+    }
+}
+
+
+/* TechLaunch - Professional Card Design */
+#categories .card,
+#services .card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 14px rgba(31, 41, 55, 0.06);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+/* Card hover effect */
+#categories .card:hover,
+#services .card:hover {
+    transform: translateY(-4px);
+    border-color: #fdba74;
+    box-shadow: 0 12px 28px rgba(31, 41, 55, 0.1);
+}
+
+/* Card headings */
+#categories .card h3,
+#services .card h3 {
+    color: #1f2937;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+}
+
+/* Card descriptions */
+#categories .card p,
+#services .card p {
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+    #categories .card,
+    #services .card {
+        transition: none;
+    }
+
+    #categories .card:hover,
+    #services .card:hover {
+        transform: none;
+    }
+}
+
+
+/* TechLaunch - Contact Form Styling */
+#contact input,
+#contact textarea,
+#contact select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.85rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.625rem;
+    background-color: #ffffff;
+    color: #1f2937;
+    font: inherit;
+    line-height: 1.5;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#contact input:focus,
+#contact textarea:focus,
+#contact select:focus {
+    outline: none;
+    border-color: #ea580c;
+    box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.15);
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+#contact form {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    max-width: 42rem;
+    margin-inline: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #contact input,
+    #contact textarea,
+    #contact select {
+        transition: none;
+    }
+}
+
+
+/* TechLaunch - Newsletter Form */
+#newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 42rem;
+    margin-inline: auto;
+}
+
+#newsletter input[type="email"] {
+    flex: 1 1 14rem;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0.85rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.625rem;
+    background-color: #ffffff;
+    color: #1f2937;
+    font: inherit;
+}
+
+#newsletter input[type="email"]:focus {
+    outline: 2px solid #ea580c;
+    outline-offset: 2px;
+}
+
+#newsletter form button {
+    flex: 0 0 auto;
+}
+
+@media (max-width: 480px) {
+    #newsletter form {
+        flex-direction: column;
+    }
+
+    #newsletter form button {
+        width: 100%;
+    }
+}
+
+
+/* Responsive images - Categories and Services */
+#categories img,
+#services img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}
+
+/* Consistent image size inside cards */
+#categories .card img,
+#services .card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    #categories img,
+    #services img {
+        max-width: 100%;
+    }
+
+    #categories .card img,
+    #services .card img {
+        aspect-ratio: 4 / 3;
+    }
+}
+
+
+/* Newsletter email field sizing fix */
+#newsletter input[type="email"] {
+    width: 100%;
+    height: auto;
+    min-height: 48px;
+    max-height: 52px;
+    box-sizing: border-box;
+    padding: 0.75rem 1rem;
+    line-height: 1.5;
+    border: 1px solid #d1d5db;
+    border-radius: 0.625rem;
+    background: #ffffff;
+    font: inherit;
+}
+
+/* Keep newsletter form fields responsive */
+#newsletter form {
+    width: 100%;
+    max-width: 42rem;
+    margin-inline: auto;
+    align-items: center;
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+    #newsletter input[type="email"] {
+        width: 100%;
+        min-height: 48px;
+        max-height: 52px;
+    }
+
+    #newsletter form button {
+        width: 100%;
     }
 }
