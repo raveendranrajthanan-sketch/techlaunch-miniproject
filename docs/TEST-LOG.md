@@ -58,3 +58,34 @@
 ## Final Result
 
 The TechLaunch landing page was tested across the required mobile, tablet, and desktop viewport sizes. Contact and newsletter forms were tested using client-side validation. No horizontal scrolling was observed during the responsive checks.
+
+##### Correction Summery
+
+# TechLaunch – Test Log
+
+## Testing Overview
+Testing was carried out to check the functionality, responsiveness, usability, and accessibility of the TechLaunch website.
+
+## Test Cases
+
+| Test ID | Test Area              | Expected Result                      | Actual Result | Status  |
+|---------|------------------------|--------------------------------------|---------------|---------|
+| T01     | Desktop layout         | Content displays correctly           | To be tested  | Pending |
+| T02     | Mobile responsiveness  | No horizontal scrolling              | To be tested  | Pending |
+| T03     | Navigation menu        | Menu opens and closes correctly      | To be tested  | Pending |
+| T04     | Contact form           | Invalid inputs are rejected          | To be tested  | Pending |
+| T05     | Newsletter form        | Form validation works correctly      | To be tested  | Pending |
+| T06     | Show More button       | Additional content is displayed      | To be tested  | Pending |
+| T07     | Service buttons        | Content toggles correctly            | To be tested  | Pending |
+| T08     | Image toggle           | Images display or hide correctly     | To be tested  | Pending |
+| T09     | Keyboard accessibility | Interactive elements can be accessed | To be tested  | Pending |
+| T10     | Reduced motion         | Animations respect user preferences  | To be tested  | Pending |
+
+## Testing Notes
+- Run each test case in the browser.
+- Record the actual result after testing.
+- Change the status to Pass or Fail based on the observed result.
+- Fix any failures and test again.
+
+## Conclusion
+Testing results will be recorded after the test cases have been executed.

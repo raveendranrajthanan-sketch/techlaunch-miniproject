@@ -1,42 +1,35 @@
+
 "use strict";
 
 const menuToggle = document.querySelector("#menu-toggle");
 const mainMenu = document.querySelector("#main-menu");
 
 if (menuToggle && mainMenu) {
-
     menuToggle.addEventListener("click", () => {
-
         const isOpen = mainMenu.classList.toggle("is-open");
 
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+
         menuToggle.setAttribute(
-            "aria-expanded",
-            String(isOpen)
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
         );
     });
 
-
     mainMenu.querySelectorAll("a").forEach((link) => {
-
         link.addEventListener("click", () => {
-
             mainMenu.classList.remove("is-open");
-
-            menuToggle.setAttribute(
-                "aria-expanded",
-                "false"
-            );
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Open navigation menu");
         });
-
     });
 }
-
 
 const contactForm = document.querySelector("#contact-form");
 
 const validationRules = {
     name: {
-        pattern: /^[\p{L}\p{M}'’.\- ]{3,50}$/u,
+        pattern: /^[\p{L}\p{M}'’. -]{3,50}$/u,
         message: "Please enter a valid name between 3 and 50 characters."
     },
 
@@ -51,7 +44,7 @@ const validationRules = {
     },
 
     subject: {
-        pattern: /^[\p{L}\p{N}\s.,'’&()\/\-]{5,80}$/u,
+        pattern: /^[\p{L}\p{N}\s.,'’&()\/-]{5,80}$/u,
         message: "Please select a valid subject."
     },
 
@@ -178,36 +171,37 @@ if (contactForm) {
             if (!validateField(field)) {
                 formIsValid = false;
             }
-    });
+        });
 
+        if (!formIsValid) {
+            const firstInvalidField =
+                contactForm.querySelector('[aria-invalid="true"]');
 
-        if (formIsValid) {
+            if (firstInvalidField) {
+                firstInvalidField.focus();
+            }
 
-            alert(
-                "Thank you! Your message has been validated successfully."
-            );
-
-            contactForm.reset();
-
-
-            contactFields.forEach((field) => {
-
-                field.dataset.touched = "false";
-
-                field.removeAttribute("aria-invalid");
-
-                const error =
-                    field.parentElement.querySelector(".field-error");
-
-                if (error) {
-                    error.textContent = "";
-                }
-
-            });
+            return;
         }
 
-    });
+        alert(
+            "Thank you! Your message has been validated successfully."
+        );
 
+        contactForm.reset();
+
+        contactFields.forEach((field) => {
+            field.dataset.touched = "false";
+            field.removeAttribute("aria-invalid");
+
+            const error =
+                field.parentElement.querySelector(".field-error");
+
+            if (error) {
+                error.textContent = "";
+            }
+        });
+    });
 }
 
 const newsletterForm = document.querySelector("#newsletter-form");
@@ -294,6 +288,63 @@ serviceLearnMoreButtons.forEach((button) => {
             currentNotes.setAttribute("hidden", "");
             button.setAttribute("aria-expanded", "false");
             button.textContent = "Learn More";
+        }
+    });
+});
+
+
+/* TechLaunch scroll reveal animation */
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("main section");
+
+    if (!("IntersectionObserver" in window)) {
+        sections.forEach((section) => {
+            section.classList.add("reveal-visible");
+        });
+        return;
+    }
+
+    const observer = new IntersectionObserver(
+        (entries, currentObserver) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("reveal-visible");
+                    currentObserver.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.12
+        }
+    );
+
+    sections.forEach((section) => {
+        observer.observe(section);
+    });
+});
+
+
+document.querySelectorAll(".image-toggle-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+        const containerId = button.getAttribute("aria-controls");
+        const container = document.getElementById(containerId);
+
+        if (!container) return;
+
+        const showImages = container.hidden;
+
+        container.hidden = !showImages;
+        button.setAttribute("aria-expanded", String(showImages));
+
+        const text = button.querySelector(".button-text");
+        const icon = button.querySelector(".button-icon");
+
+        if (text) {
+            text.textContent = showImages ? "Hide Images" : "Show Images";
+        }
+
+        if (icon) {
+            icon.textContent = showImages ? "−" : "＋";
         }
     });
 });

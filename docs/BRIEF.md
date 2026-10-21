@@ -51,6 +51,9 @@ The project requires at least three images with:
 - Own or openly licensed sources
 - Credits recorded in the README
 
+
+##### Correction Summery
+
 ## Technology Restrictions
 
 Allowed:
@@ -96,3 +99,35 @@ The final project should be deployed using GitHub Pages from the repository root
 ## Limitations
 
 Contact and newsletter forms are client-side demonstrations only. They do not send real emails or store submitted data.
+
+
+# TechLaunch – Project Brief
+
+## Project Overview
+TechLaunch is a school project website designed to help students learn about web development, programming, digital skills, and technology.
+
+## Main Features
+- Responsive website layout for mobile, tablet, and desktop.
+- Services section with service cards and Learn More buttons.
+- About section with additional information and Show More functionality.
+- Contact form with input validation.
+- Newsletter form with validation.
+- Mobile navigation menu.
+- Interactive image toggle functionality.
+- Scroll-reveal animations with reduced-motion support.
+
+## Design Improvements
+- Improved typography, spacing, and visual appearance.
+- Enhanced service cards and button styling.
+- Improved responsive layouts across different screen sizes.
+- Maintained the existing green and orange colour theme.
+- Added accessibility and usability improvements.
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Git and GitHub Pages
+
+## Project Goal
+To create a modern, user-friendly, accessible, and responsive website for students interested in learning technology and developing practical skills.

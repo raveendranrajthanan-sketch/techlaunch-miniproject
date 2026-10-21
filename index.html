@@ -10,27 +10,44 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header id="top">
-        <nav>
-            <a href="#home">TechLaunch</a>
+   
+<header id="top">
+    <nav class="navbar">
+        
+        <div class="brand">
+            <a href="#home" class="brand-logo">
+                <img
+                    src="images/techlaunch-logo.png"
+                    alt="TechLaunch logo"
+                    class="site-logo"
+                >
+            </a>
+            <p>LEARN · BUILD · INNOVATE</p>
+        </div>
 
-            <button id="menu-toggle"
-                    type="button"
-                    aria-expanded="false"
-                    aria-controls="main-menu">
-                Menu
-            </button>
 
-            <ul id="main-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#categories">Categories</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-            </ul>
-        </nav>
-    </header>
+        <button
+            id="menu-toggle"
+            type="button"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="main-menu"
+        >
+            <span class="menu-icon" aria-hidden="true">☰</span>
+            <span class="menu-label">Menu</span>
+        </button>
+
+        <ul id="main-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+    </nav>
+</header>
+
 
     <main>
 
@@ -39,11 +56,23 @@
                 <span>Build Skills.</span>
                 Create the Future.
             </h1>
-            <p>
-                Welcome to TechLaunch, a platform designed to inspire students to explore the exciting world of technology. We provide a friendly and supportive learning environment where students can develop their skills, improve their knowledge, and build confidence in their abilities.
-Our project focuses on web development, programming, and modern technologies through practical activities and real-world projects. Students can explore new ideas, solve problems creatively, and gain valuable experience that prepares them for future opportunities.
-At TechLaunch, we believe that learning becomes more effective through creativity, collaboration, and continuous practice. Our goal is to encourage students to think innovatively, develop technical skills, and take their first steps towards a successful future in technology.
-            </p>
+            
+<p>
+    Welcome to TechLaunch, a platform designed to inspire students
+    to explore the exciting world of technology. We provide a
+    friendly and supportive learning environment where students
+    can develop their skills, expand their knowledge, and build
+    confidence through practical activities and real-world projects.
+</p>
+
+<p>
+    From web development and programming to modern technologies,
+    students can explore new ideas, solve problems creatively,
+    and develop essential skills for the future. At TechLaunch,
+    we encourage creativity, collaboration, and continuous learning
+    to help every student turn their ideas into meaningful projects.
+</p>
+
 
             <a href="#services">Explore Our Services</a>
         </section>
@@ -152,8 +181,74 @@ At TechLaunch, we believe that learning becomes more effective through creativit
                             Learn More
                         </button>
                 </article>
+            <div class="banner-content">
+    <h3>Ready to Build Your Future?</h3>
 
-            </div>
+    <p>
+        Explore exciting technology fields, strengthen your skills,
+        and turn your creative ideas into real-world projects with TechLaunch.
+    </p>
+
+    <div class="section-image-toggle">
+        <button
+            type="button"
+            class="banner-button image-toggle-btn"
+            aria-expanded="false"
+            aria-controls="categories-extra-image"
+        >
+            <span class="button-text">Show Images</span>
+            <span class="button-icon" aria-hidden="true">＋</span>
+        </button>
+
+        <div
+            id="categories-extra-image"
+            class="extra-images"
+            hidden
+        >
+            <figure>
+                <img src="images/c1.jpg"
+                     alt="Technology learning and exploration"
+                     loading="lazy">
+                <figcaption>Technology Learning</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/c2.jpg"
+                     alt="Web development and website creation"
+                     loading="lazy">
+                <figcaption>Web Development</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/c3.jpg"
+                     alt="Programming and coding practice"
+                     loading="lazy">
+                <figcaption>Programming</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/c4.jpg"
+                     alt="Creative digital design"
+                     loading="lazy">
+                <figcaption>Digital Design</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/c5.jpg"
+                     alt="Building practical technology projects"
+                     loading="lazy">
+                <figcaption>Project Development</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/c6.jpg"
+                     alt="Exploring modern technology"
+                     loading="lazy">
+                <figcaption>Modern Technology</figcaption>
+            </figure>
+                   
+                </div>
+
         </section>
 
         <section id="services">
@@ -266,6 +361,79 @@ At TechLaunch, we believe that learning becomes more effective through creativit
                         Learn More
                     </button>
                 </article>
+                    
+<div class="banner-content">
+    <h3>Discover Our Technology Services</h3>
+
+    <p>
+        Build your digital future with TechLaunch. Explore our learning
+        services, improve your technical skills, and gain practical
+        experience through creative projects and modern technologies.
+    </p>
+
+    <div class="section-image-toggle">
+        <button
+            type="button"
+            class="banner-button image-toggle-btn"
+            aria-expanded="false"
+            aria-controls="services-extra-images"
+        >
+            <span class="button-text">Show Images</span>
+            <span class="button-icon" aria-hidden="true">＋</span>
+        </button>
+
+        <div
+            id="services-extra-images"
+            class="extra-images"
+            hidden
+        >
+            <figure>
+                <img src="images/s1.jpg"
+                     alt="Web development and website building"
+                     loading="lazy">
+                <figcaption>Web Development</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/s2.jpg"
+                     alt="Programming and coding practice"
+                     loading="lazy">
+                <figcaption>Programming Training</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/s3.jpg"
+                     alt="Creative graphic and digital design"
+                     loading="lazy">
+                <figcaption>Digital Design</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/s4.jpg"
+                     alt="Practical software project development"
+                     loading="lazy">
+                <figcaption>Project Development</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/s5.jpg"
+                     alt="Learning modern technology skills"
+                     loading="lazy">
+                <figcaption>Technology Learning</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/s6.jpg"
+                     alt="Digital innovation and creative solutions"
+                     loading="lazy">
+                <figcaption>Digital Innovation</figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+
+                    
+                
 
             </div>
         </section>
@@ -397,6 +565,29 @@ At TechLaunch, we believe that learning becomes more effective through creativit
     </main>
 
     <footer id="footer">
+        <div class="footer-top">
+        <a class="footer-cta" href="#contact">
+            Got a project? Let's talk
+            <span aria-hidden="true">↗</span>
+        </a>
+
+        <nav class="social-links" aria-label="Social media">
+            <a href="https://www.linkedin.com/" target="_blank"
+               rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+
+            <a href="https://x.com/" target="_blank"
+               rel="noopener noreferrer" aria-label="X">𝕏</a>
+
+            <a href="https://www.facebook.com/" target="_blank"
+               rel="noopener noreferrer" aria-label="Facebook">f</a>
+
+            <a href="https://www.instagram.com/" target="_blank"
+               rel="noopener noreferrer" aria-label="Instagram">◎</a>
+
+            <a href="https://dribbble.com/" target="_blank"
+               rel="noopener noreferrer" aria-label="Dribbble">◉</a>
+        </nav>
+    </div>
 
         <p>
             &copy; 2026 TechLaunch. All rights reserved.
